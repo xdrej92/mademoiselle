@@ -1,0 +1,35 @@
+
+
+.main-services{
+    padding-bottom: 111px;
+    .main-services-item{
+        .main-services-item-picture{
+            padding: 0px;
+        }
+        .main-services-item-data{
+            padding: 80px 95px 0px 95px;
+            @media(min-width:1200px){
+                padding: 114px 95px 0px 95px;
+            }
+            .news-title{
+                margin-bottom: 36px;
+                @media(min-width:1200px){
+                    font-size: 3.6rem;
+                }
+            }
+            .btn{
+                margin-bottom: 50px;
+                border: 1px solid #1e1e1e;
+                border-radius: 0px;
+                font-size: 1.4rem;
+                line-height:1.7rem;
+                letter-spacing:0.5px;
+                padding: 15px 36px;
+                @media(min-width:1200px){
+                   margin-bottom: 95px; 
+                }
+            }
+        }
+    }
+}
+

@@ -27,6 +27,12 @@ $(document).ready(function () {
 // animation end
 
 
+if($('.professionals-slider').length > 0){
+    $('.professionals-slider').owlCarousel({
+        items: 1
+    });
+}
+
 /*
 
     if ($('.contact-form').length > 0) {

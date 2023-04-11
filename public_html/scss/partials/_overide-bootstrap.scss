@@ -12,6 +12,12 @@ $body-color: #1E1E1E;
 $primary: #ECD9D9;
 $secondary: #F5F5F5;
 
+$navbar-light-toggler-border-color:$primary;
+$navbar-light-icon-color: $primary;
+$navbar-light-color: none;
+$navbar-light-hover-color: none;
+$navbar-light-active-color: $primary;
+
 
 $grid-breakpoints: (
   xs: 0,

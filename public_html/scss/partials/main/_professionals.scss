@@ -1,0 +1,48 @@
+.professionals{
+    padding-bottom: 67px;
+    .professionals-slider{
+        border: 1px solid #ECD9D9;
+        @media(min-width:992px){
+            padding: 54px 54px;
+        }
+        @media(min-width:1200px){
+            padding: 54px 0 54px 95px;
+        }
+        .professionals-slider-item{
+            .professionals-slider-item-data{
+                @media(min-width:992px){
+                    margin-left: 80px;
+                }
+                @media(min-width:1200px){
+                    margin-left: 0px;
+                    margin-right: 250px;
+                }
+                h2{
+                    font-family: 'Lato', sans-serif;
+                    padding-top: 31px;
+                    margin-bottom: 35px;
+                    font-size: 3rem;
+                    line-height: 2.7rem;
+                    letter-spacing: normal;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                }
+                p{
+                    line-height:23px;
+                    letter-spacing: normal;
+                    @media(min-width:1200px){
+                        width: 368px;
+                    }
+                }
+
+            }
+        }
+    }
+    .owl-dots{
+        @media(min-width:1200px){
+            position: absolute;
+            bottom: 52px;
+            right: 525px;
+        }
+    }
+}
