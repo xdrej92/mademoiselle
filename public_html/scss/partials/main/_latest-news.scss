@@ -3,6 +3,9 @@
     .about-news &{
         padding: 0px;
     }
+    .blog-news &{
+        padding: 88px 0 40px;
+    }
     .latest-news-item{
         .about-news &{
             margin-left: 0px;
@@ -10,37 +13,40 @@
                 margin-left: 8px;
             }
         }
-    }
-    .latest-news-content{
-        width: 85%;
-        margin-top: -68px;
-        background-color: white;
-        z-index: 4;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 22px 18px 57px;
-        .about-news &{
-            margin-bottom: 2rem;
-        }
-        p{
-            font-family: 'Bodoni* 72';
-            font-style: italic;
-            font-size: 1.4rem;
-            line-height: 1.77rem;
-            letter-spacing: 1px;
-            margin-bottom: 1.7rem;
-        }
-        h3{
-            font-size: 1.6rem;
-            line-height: 2.4rem;
-            color: #1e1e1e !important;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            a{
-                text-transform: uppercase;
+        .latest-news-content{
+            width: 85%;
+            margin-top: -68px;
+            background-color: white;
+            z-index: 4;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 22px 18px 57px;
+            .about-news &{
+                margin-bottom: 2rem;
+            }
+            .blog-news &{
+                margin-bottom: 38px;
+            }
+            p{
+                font-family: 'Bodoni* 72';
+                font-style: italic;
+                font-size: 1.4rem;
+                line-height: 1.77rem;
+                letter-spacing: 1px;
+                margin-bottom: 1.7rem;
+            }
+            h3{
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: #1e1e1e !important;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                a{
+                    text-transform: uppercase;
+                }
             }
         }
     }
