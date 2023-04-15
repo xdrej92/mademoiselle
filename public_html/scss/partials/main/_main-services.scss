@@ -3,6 +3,13 @@
 .main-services{
     padding-bottom: 111px;
     .main-services-item{
+        background-color: #F5F5F5;
+        &:nth-of-type(even){
+            background-color: #ECD9D9;
+        }
+        .row{
+            margin: 0px;
+        }
         .main-services-item-picture{
             padding: 0px;
         }
@@ -26,7 +33,12 @@
                 letter-spacing:0.5px;
                 padding: 15px 36px;
                 @media(min-width:1200px){
-                   margin-bottom: 95px; 
+                    margin-bottom: 95px;
+                }
+                &:hover{
+                    background-color: black;
+                    color: #ffffff;
+                    border: 1px solid #ffffff;
                 }
             }
         }

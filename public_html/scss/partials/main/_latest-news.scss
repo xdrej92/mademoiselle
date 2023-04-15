@@ -1,5 +1,16 @@
 .latest-news{
     padding: 75px 0 56px 0;
+    .about-news &{
+        padding: 0px;
+    }
+    .latest-news-item{
+        .about-news &{
+            margin-left: 0px;
+            @media(min-width:992px){
+                margin-left: 8px;
+            }
+        }
+    }
     .latest-news-content{
         width: 85%;
         margin-top: -68px;
@@ -9,6 +20,9 @@
         margin-left: auto;
         margin-right: auto;
         padding: 22px 18px 57px;
+        .about-news &{
+            margin-bottom: 2rem;
+        }
         p{
             font-family: 'Bodoni* 72';
             font-style: italic;

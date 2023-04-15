@@ -1,0 +1,87 @@
+
+
+.main-about{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 283px 0 284px 0;
+    .main-about-title{
+        margin-bottom: 0px;
+        font-size: 6rem;
+        line-height: 8.4rem;
+        letter-spacing: 2rem;
+        color: #ffffff;
+        font-family: 'Bodoni* 72';
+
+    }
+}
+
+.about-news{
+    padding: 91px 0px 58px 0px;
+    .about-news-content{
+        h2{
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 4.4rem;
+            line-height: 5rem;
+            letter-spacing: normal;
+            text-align: left;
+            margin-bottom: 3rem;
+            @media(min-width:1200px){
+                width: 465px;
+            }
+        }
+        p{
+            font-size: 1.8rem;
+            line-height: 2.6rem;
+            letter-spacing: normal;
+            text-align: left;
+            margin-bottom: 3rem;
+            @media(min-width:992px){
+                margin-bottom: 5rem;
+            }
+            @media(min-width:1200px){
+                width: 728px;
+            }
+        }
+        img{
+            margin-bottom: 3rem;
+            @media(min-width:992px){
+                margin-bottom: 6.6rem;
+            }
+        }
+    }
+    .latest-news{
+        .input-group{
+            margin-left: 0px;
+            margin-bottom: 0px!important;
+            @media(min-width:992px){
+                margin-left: 8px;
+            }
+            .form-control{
+                font-family: 'Bodoni* 72';
+                font-style: italic;
+                font-size: 1.4rem;
+                border: 1px solid #1E1E1E;
+                border-right: none;
+                border-radius: 0%;
+                padding: 1.5rem;
+                margin-right: 0px!important;
+                &:focus{
+                    outline: none!important;
+                    box-shadow: none!important;
+                }
+            }
+            .btn{
+                border: 1px solid #1E1E1E;
+                border-left: none;
+                border-radius: 0%;
+                padding-right: 1.5rem;
+                margin-right: 0px;
+                @media(min-width:992px){
+                margin-right: 8px;
+            }
+            }
+        }
+    }
+}
