@@ -1,0 +1,59 @@
+
+
+.contact{
+    @media(min-width:992px){
+        margin-top: 84.5px;
+    }
+    padding: 104px 0 110px 0;
+    h2{
+        font-family: 'Bodoni* 72';
+        color: #1E1E1E;
+        font-size:3rem;
+        line-height: 4.5rem;
+        letter-spacing: 5px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    .contact-form{
+        .form-group{
+            .form-control{
+                background-color: #F6F5F6;
+                border: none;
+                border-radius: 0%;
+                padding: 12px 19px;
+                resize: none;
+            }
+            .btn{
+                border: 1px solid #1e1e1e;
+                border-radius: 0px;
+                padding: 15px 30.5px;
+                &:hover{
+                    background-color: #ECD9D9;
+                    color: #1e1e1e;
+                }
+            }
+        }
+    }
+    figure{
+        margin: 0;
+    }
+}
+
+.contact-info{
+    padding: 63px 0 60px 0;
+    margin-bottom: 46px;
+    .contact-info-data{
+        font-size: 24px;
+        line-height: 25px;
+        p{
+            margin-bottom: 20px;
+        }
+        a{
+            display: block;
+            margin-bottom: 20px;
+            &:last-of-type{
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

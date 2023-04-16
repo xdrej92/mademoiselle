@@ -1,0 +1,33 @@
+
+.main-error{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 218px 0 269px 0;
+    @media(min-width:992px){
+        margin-top: 84.5px;
+    }
+    .main-error-title{
+        font-size: 4rem;
+        line-height: 7.4rem;
+        letter-spacing: 1rem;
+        color: #ffffff;
+        font-family: 'Bodoni* 72';
+        @media(min-width:768px){
+            font-size: 6rem;
+            line-height: 8.4rem;
+            letter-spacing: 2rem;
+           
+        }
+    }
+    .btn{
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        border-radius: 0%;
+        padding: 15px 30px;
+        &:hover{
+            background-color: #ECD9D9;
+            color: #1e1e1e;
+        }
+    }
+}

@@ -5,6 +5,11 @@
     @media(min-width:992px){
         padding: 165px 0 97px 0px;
     }
+    .services-single-news &{
+        @media(min-width:992px){
+        padding: 170px 0px 181px 0px;
+    }
+    }
     .single-news-info{
         font-family: 'Bodoni* 72';
         font-size: 1.4rem;
@@ -36,6 +41,12 @@
                 font-weight: 300;
                 line-height: 2.8rem;
                 letter-spacing: normal;
+                
+            }
+        }
+        .services-single-news &{
+            p{
+                font-size: 1.8rem;
             }
         }
     }

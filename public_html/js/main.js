@@ -33,7 +33,7 @@ if($('.professionals-slider').length > 0){
     });
 }
 
-/*
+
 
     if ($('.contact-form').length > 0) {
         $(function () {
@@ -47,34 +47,19 @@ if($('.professionals-slider').length > 0){
                     $(element).closest('.form-group').addClass("is-valid").removeClass("is-invalid");
                 },
                 rules: {
-                    name: {
+                    contact_name: {
                         required: true
                     },
-                    email: {
+                    contact_email: {
                         required: true,
                         email: true
                     },
-                    message: {
-                        required: true,
-                        maxlength: 255
+                    contact_message: {
+                        required: true
 
                     }
                 },
-                messages: {
-                    name: {
-                        required: 'Name* is required field!!!'
-                    },
-                    email: {
-                        required: 'Email* is required field!!!',
-                        email: 'Please insert valid Email address!!!'
-                    },
-                    message: {
-                        required: 'Message* is required field!!!',
-                        maxlength: 'Max Message length is 255 characters !!!'
-
-                    }
-
-                },
+               
                 errorElement: 'p',
                 errorPlacement: function (error, element) {
                     error.appendTo($(element).closest('.form-group').find('.invalid-feedback'));
@@ -84,6 +69,5 @@ if($('.professionals-slider').length > 0){
         });
     }//Form Validation
 
-*/
 
 });
