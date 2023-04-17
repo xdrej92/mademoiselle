@@ -12,11 +12,15 @@
         line-height: 7.4rem;
         letter-spacing: 1rem;
         color: #ffffff;
-        font-family: 'Bodoni* 72';
+        font-family: 'Bodoni';
         @media(min-width:768px){
             font-size: 6rem;
             line-height: 8.4rem;
             letter-spacing: 2rem;
+        }
+        @media(min-width:992px){
+            width: 704px;
+            margin: auto;
         }
     }
 }

@@ -25,6 +25,11 @@ header{
 
     .navbar-nav{
         .nav-item{
+            border-bottom: 1px solid #ecd9d9;
+            &:hover{
+                color: #ECD9D9;
+                background-color: #1e1e1e; 
+            }
             &:after{
                 content: '';
                 width:100%;
@@ -32,13 +37,20 @@ header{
                 display: block;
             }
             @media(min-width:992px){
+                &:hover{
+                    color: #1e1e1e;
+                    background-color: #ffffff;
+                }
+                border-bottom: none;
                 &:hover:after{
                     content: '';
                     width:100%;
                     height:1px;
                     display: block;
                     background-color: #ECD9D9 !important;
-                    z-index: 150;
+                    color: #1e1e1e;
+                    z-index: 14;
+
                 }
                 &:not(:last-of-type){
                     margin-right: 72px;
