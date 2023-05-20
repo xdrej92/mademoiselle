@@ -24,11 +24,20 @@ header{
     }
 
     .navbar-nav{
+        border-bottom: 1px solid #ecd9d9;
+        @media(min-width:992px){
+            border-bottom:none;
+        }
         .nav-item{
-            border-bottom: 1px solid #ecd9d9;
+            &:not(:last-of-type){
+                border-bottom: 1px solid #ecd9d9;
+                @media(min-width:992px){
+                    border-bottom:none;
+                }
+            }
             &:hover{
                 color: #ECD9D9;
-                background-color: #1e1e1e; 
+                background-color: #1e1e1e;
             }
             &:after{
                 content: '';
@@ -37,11 +46,17 @@ header{
                 display: block;
             }
             @media(min-width:992px){
+                border-bottom: none;
+                position: relative;
                 &:hover{
                     color: #1e1e1e;
                     background-color: #ffffff;
+                    .submenu{
+                        opacity: 1;
+                        transform: rotateX(0) perspective(1000px);
+
+                    }
                 }
-                border-bottom: none;
                 &:hover:after{
                     content: '';
                     width:100%;
@@ -62,7 +77,46 @@ header{
                 font-size: 1.4rem;
                 line-height: 1.7rem;
                 letter-spacing: 1px;
+                position: relative;
+                .toggle-submenu{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 30px;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    @media(min-width:992px){
+                        display: none;
+                    }
+                }
 
+            }
+            .submenu{
+                display: none;
+                transition: 0.5s linear;
+                background-color: white;
+                @media(min-width:992px){
+                    margin-left: 30px;
+                    display: block !important;
+                    transform: rotateX(-90deg);
+                    transform-origin: 0 0;
+                    opacity: 0;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    .nav-item{
+                        margin: 0 10px 0 10px;
+                        padding: 5px 0 5px 0;
+
+                        .nav-link{
+                            @media(min-width:992px){
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

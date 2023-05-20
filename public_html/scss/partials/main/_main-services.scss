@@ -6,15 +6,15 @@
         padding: 88px 0 37px 0px;
     }
     .main-services-item{
-        background-color: #F5F5F5;
-        &:nth-of-type(even){
-            background-color: #ECD9D9;
-        }
-        .row{
-            margin: 0px;
-        }
-        .main-services-item-picture{
-            padding: 0px;
+        background-color: #ECD9D9;
+        &:nth-of-type(2n){
+            background-color: #F5F5F5;
+            .main-services-item-picture{
+                padding: 0px;
+                @media(min-width:992px){
+                    order:1;
+                }
+            }
         }
         .main-services-item-data{
             padding: 80px 95px 0px 95px;

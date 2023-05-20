@@ -7,8 +7,8 @@
     }
     .services-single-news &{
         @media(min-width:992px){
-        padding: 170px 0px 181px 0px;
-    }
+            padding: 170px 0px 181px 0px;
+        }
     }
     .single-news-info{
         font-family: 'Bodoni';
@@ -25,10 +25,20 @@
 
     }
     .row{
+        .single-news-picture{
+            margin-bottom: 30px;
+            @media(min-width:992px){
+                margin-bottom: 0px;
+            }
+        }
         .single-news-item{
             h2{
                 font-family: 'Lato', sans-serif;
                 text-transform: uppercase;
+                margin-bottom: 25px;
+                @media(min-width:992px){
+                    margin-bottom: 50px;
+                }
                 @media(min-width:1200px){
                     width:454px;
                     font-size: 4.4rem;
@@ -41,7 +51,7 @@
                 font-weight: 300;
                 line-height: 2.8rem;
                 letter-spacing: normal;
-                
+
             }
         }
         .services-single-news &{
